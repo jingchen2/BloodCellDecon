@@ -2,7 +2,7 @@
 % Please edit documentation in R/estimateCellComposition.R
 \name{estimateCellComposition}
 \alias{estimateCellComposition}
-\title{Estimate cell compostions in test samples based on reference profile and projection.}
+\title{Estimate cell compositions in test samples based on reference profile and projection.}
 \usage{
 estimateCellComposition(
   test.beta,
@@ -29,7 +29,7 @@ ref.projection.EPIC$projection, pre-calculated from GSE167998, can be used.}
 A matrix of cell compositions in the test samples. Samples are in rows, cell types in columns.
 }
 \description{
-Estimate cell compostions in test samples based on reference profile and projection.
+Estimate cell compositions in test samples based on reference profile and projection.
 }
 \examples{
 \dontrun{

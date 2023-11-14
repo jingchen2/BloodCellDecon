@@ -1,4 +1,4 @@
-#' Estimate cell compostions in test samples based on reference profile and projection.
+#' Estimate cell compositions in test samples based on reference profile and projection.
 #'
 #' @param test.beta Beta matrix of samples to be tested. Probes are in rows. Samples are in columns. Row names have to be probe IDs.
 #' @param ref.beta.mat Matrix of mean beta values for the reference cells. Row names have to be probe IDs. For EPIC arrays,

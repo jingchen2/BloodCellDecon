@@ -2,3 +2,4 @@
 
 export(createReferenceProjection)
 export(estimateCellComposition)
+export(plot_celltype)
