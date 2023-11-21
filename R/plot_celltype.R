@@ -31,9 +31,10 @@ plot_celltype <- function(predicted, actual, celltype, plot=T) {
   # Create a data frame for plotting
   plot_data <- data.frame(Predicted = predicted_values, Actual = actual_values, celltype=celltype)
 
+  max.value=max(c(plot_data$Predicted,plot_data$Actual))
   # Plot using ggplot2
   p <- ggplot2::ggplot(plot_data, ggplot2::aes(x = Actual, y = Predicted)) +
-    ggplot2::expand_limits(x=0,y=0) +
+    ggplot2::expand_limits(x=c(0,max.value),y=c(0,max.value)) +
     ggplot2::geom_point(ggplot2::aes(color = Actual)) +
     ggplot2::geom_smooth(method = 'lm', col = 'red',fullrange=TRUE, se=FALSE) +
     ggplot2::geom_abline(slope=1,intercept = 0,col='red',linetype='dashed') +

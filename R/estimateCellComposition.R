@@ -22,7 +22,6 @@ estimateCellComposition=function(test.beta, ref.beta.mat, projection, n.PC=20,ex
   common.pid = intersect(rownames(ref.beta.mat),rownames(test.beta))
   print(paste0(length(common.pid),' probes found in test data.'))
   # create overlapping matrices and vectors
-  projection0 = projection[match(common.pid,rownames(projection)),1:n.PC]
   ref.beta.mat = data.matrix(ref.beta.mat[match(common.pid,rownames(ref.beta.mat)),])
   test.beta = t(test.beta[match(common.pid,rownames(test.beta)),])
   projection = projection[match(common.pid,rownames(projection)),]
