@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of BloodCellDecon is to …
+BloodCellDecon deconvolutes cells based on blood DNA methylation arrays.
 
 ## Installation
 
