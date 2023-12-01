@@ -21,7 +21,8 @@ devtools::install_github("jingchen2/BloodCellDecon")
 ## Example
 
 This is a basic example which shows you how to deconvolute test samples
-in test.beta matrix:
+in test.beta matrix. ref.projection.EPIC is the pre-computed data
+containing the projection matrix and the mean reference beta matrix.
 
 ``` r
 library(BloodCellDecon)
