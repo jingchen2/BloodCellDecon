@@ -45,7 +45,7 @@ estimateCellComposition=function(test.beta, ref.beta.mat, projection, n.PC=20,ex
     test.res$Bcell=test.res$Bmem+test.res$Bnv
     test.res$CD4T = test.res$CD4mem + test.res$CD4nv + test.res$Treg
     test.res$CD8T = test.res$CD8mem + test.res$CD8nv
-    test.res$Gran = test.res$Bas + test.res$Eos + test.res$Neu + test.res$Mono
+    test.res$Gran = test.res$Bas + test.res$Eos + test.res$Neu
   }
   test.res
 }
