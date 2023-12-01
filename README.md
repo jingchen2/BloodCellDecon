@@ -10,8 +10,10 @@ BloodCellDecon deconvolutes cells based on blood DNA methylation arrays.
 
 ## Installation
 
-You can install the development version of BloodCellDecon from
-[GitHub](https://github.com/) with:
+Please make sure
+[genefilter](https://bioconductor.org/packages/release/bioc/html/genefilter.html)
+package is installed before installing BloodCellDecon. You can install
+BloodCellDecon from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
