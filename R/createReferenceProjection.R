@@ -15,7 +15,7 @@
 #' \dontrun{
 #'ref.projection.EPIC = createReferenceProjection(beta.ref=ref.beta, cell.type = ref.cell,n.top.probe = 200)
 #' }
-createReferenceProjection=function(beta.ref, cell.type, n.top.probe=200, top.probes=NULL){
+createReferenceProjection=function(beta.ref, cell.type, n.top.probe=150, top.probes=NULL){
   stopifnot(is.matrix(beta.ref),ncol(beta.ref)==length(cell.type))
 
   # perform probe selection
